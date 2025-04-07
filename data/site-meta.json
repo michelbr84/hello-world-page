@@ -1,0 +1,7 @@
+{
+  "title": "Hello World Page",
+  "description": "A simple Hello World web page following a modular file structure.",
+  "author": "Static Website Tutorial",
+  "version": "1.0.0",
+  "keywords": ["hello", "world", "website", "example"]
+}

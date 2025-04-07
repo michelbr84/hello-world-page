@@ -1,0 +1,35 @@
+/* 
+  style.css
+  This file contains the custom styles for your Hello World Page.
+*/
+
+/* Body styles: setting base font, background, and colors */
+body {
+  font-family: Arial, sans-serif; /* Sets a clean, readable font */
+  font-size: 16px;                /* Base font size for the document */
+  color: #333;                    /* Default text color */
+  background-color: #fff;         /* Background color of the page */
+  line-height: 1.6;               /* Improves text readability */
+  margin: 0;                      /* Ensures no default margins */
+  padding: 0;                     /* Ensures no default padding */
+}
+
+/* Header styles: defining the appearance of the header section */
+header {
+  background-color: #f8f8f8; /* Light grey background for the header */
+  padding: 20px;           /* Spacing inside the header */
+  text-align: center;      /* Centers the header content */
+}
+
+/* Main section styles: setting padding for the main content area */
+main {
+  padding: 20px;
+}
+
+/* Footer styles: styling the footer with background and text alignment */
+footer {
+  background-color: #f8f8f8; /* Light grey background for the footer */
+  padding: 10px;           /* Spacing inside the footer */
+  text-align: center;      /* Centers the footer text */
+  font-size: 14px;         /* Slightly smaller font size for the footer */
+}

@@ -1,0 +1,26 @@
+# .editorconfig
+# This file helps define and maintain consistent coding styles across various editors and IDEs.
+# More info: https://editorconfig.org
+
+# Indicate that this is the top-most EditorConfig file
+root = true
+
+# Apply settings to all files
+[*]
+# Use spaces for indentation
+indent_style = space
+# Set indentation size to 2 spaces
+indent_size = 2
+# Use LF (Line Feed) for line endings
+end_of_line = lf
+# Set the character encoding to UTF-8
+charset = utf-8
+# Remove any trailing whitespace at the end of lines
+trim_trailing_whitespace = true
+# Ensure that files end with a newline
+insert_final_newline = true
+
+# Specific settings for Markdown files
+[*.md]
+# Disable maximum line length for Markdown files
+max_line_length = off
