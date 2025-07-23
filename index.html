@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A modern hello world page built with HTML, CSS, and JavaScript.">
+    <title>Hello World Page</title>
+    <!--
+      Modern HTML5 boilerplate with accessibility and SEO basics.
+      Add more meta tags and external styles/scripts as needed.
+    -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <nav aria-label="Main navigation">
+            <h1>Hello, World!</h1>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <p>Welcome to your new web project. This site is built with only HTML, CSS, and JavaScript—no frameworks or backend. Start customizing!</p>
+        </section>
+    </main>
+    <footer>
+        <small>&copy; <span id="year"></span> Hello World Page. All rights reserved.</small>
+    </footer>
+    <script>
+      // Auto-update copyright year
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
