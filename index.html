@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World ✨</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gradient: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+            --accent: #0e153a;
+            --radius: 1.2rem;
+        }
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', Arial, sans-serif;
+            background: var(--gradient);
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+        .container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .card {
+            background: rgba(255,255,255,0.85);
+            border-radius: var(--radius);
+            box-shadow: 0 2px 32px 0 rgba(12,24,32,0.09);
+            padding: 2.5rem 2rem 2rem 2rem;
+            text-align: center;
+            max-width: 410px;
+        }
+        h1 {
+            font-weight: 700;
+            font-size: 2.6rem;
+            background: var(--gradient);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-fill-color: transparent;
+            margin: 0;
+        }
+        p {
+            color: #2d3748;
+            font-size: 1.1rem;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+        .glow-btn {
+            padding: 0.8rem 2.2rem;
+            background: var(--gradient);
+            color: #fff;
+            font-weight: 700;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: var(--radius);
+            cursor: pointer;
+            box-shadow: 0 5px 25px 0 rgba(35,165,225,0.12);
+            transition: background 0.3s, transform 0.21s;
+        }
+        .glow-btn:hover {
+            transform: scale(1.08) translateY(-4px);
+            filter: brightness(1.12);
+        }
+        .from-bot {
+            opacity: 0;
+            transform: translateY(32px);
+            animation: fadein 1.2s ease 0.18s forwards;
+        }
+        @keyframes fadein {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .footer {
+            text-align: center;
+            color: #f4f6fa;
+            margin-top: 2.5rem;
+            opacity: 0.71;
+            font-size: 0.95rem;
+        }
+        @media (max-width: 600px) {
+            .card {
+                padding: 1.4rem 0.7rem 1.2rem 0.7rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="card from-bot">
+        <h1>👋 Hello, World!</h1>
+        <p>Welcome to a stunningly modern hello page.<br>
+           Brought to you with a sprinkle of <span style="color: #00acee; font-weight: bold;">gradient magic</span> and style.<br><br>
+           <small>Try the button for a friendly surprise!</small>
+        </p>
+        <button class="glow-btn" onclick="surprise()">Surprise Me ✨</button>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2024 | Designed with &hearts; for modern web lovers
+</div>
+<script>
+function surprise() {
+    alert('🎉 Surprise!\nKeep smiling & coding.');
+    document.body.style.background = 'linear-gradient(120deg, #B06AB3 0%, #4568DC 100%)';
+}
+</script>
+</body>
+</html>
