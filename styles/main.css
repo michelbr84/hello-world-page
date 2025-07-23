@@ -1,0 +1,75 @@
+/* Main CSS for the website (modernized base style)
+   - Calming background gradient
+   - Centered container
+   - Clean, accessible typography
+   - Stylish link/button appearance
+*/
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  background: linear-gradient(120deg, #f1fcfe 0%, #e0e7fa 60%, #f9f6fb 100%);
+  color: #22324b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px 0 rgba(114,134,182,0.09);
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
+  max-width: 410px;
+  width: 100%;
+  margin: 2rem auto;
+  text-align: center;
+  animation: fadeIn 1s cubic-bezier(.84,0,.08,1) 0.1s 1 both;
+}
+
+h1 {
+  font-size: 2.25rem;
+  margin: 0 0 0.45em 0;
+  letter-spacing: 0.01em;
+}
+
+p {
+  font-size: 1.1rem;
+  margin: 0 0 1.45em 0;
+  color: #3b456a;
+}
+
+a.button, a.cta {
+  display: inline-block;
+  background: linear-gradient(90deg, #6f8ef2 30%, #92c9ec 100%);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.85em 2em;
+  border-radius: 2em;
+  font-size: 1.08rem;
+  box-shadow: 0 3px 12px 0 rgba(123,178,235,0.10);
+  transition: background .17s, box-shadow .18s, transform .16s;
+  margin-top: 1.2em;
+}
+
+a.button:hover, a.cta:hover, a.button:focus {
+  background: linear-gradient(90deg, #627de4 35%, #5bbade 100%);
+  transform: translateY(-2px) scale(1.025);
+  box-shadow: 0 5px 20px 0 rgba(123,178,235,0.15);
+  outline: none;
+}
+
+/* Fade-in animation for appearance */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(16px) scale(0.97); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
