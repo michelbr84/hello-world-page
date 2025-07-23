@@ -2,66 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World Page</title>
-    <!-- Added minimal base CSS for modern appearance and accessibility -->
-    <style>
-        html { box-sizing: border-box; font-size: 18px; }
-        *, *:before, *:after { box-sizing: inherit; }
-        body {
-            background: linear-gradient(120deg, #e0eafc, #cfdef3);
-            font-family: 'Segoe UI', 'Arial', sans-serif;
-            display: flex;
-            min-height: 100vh;
-            margin: 0;
-            align-items: center;
-            justify-content: center;
-        }
-        main {
-            background: #fff;
-            border-radius: 1.25rem;
-            box-shadow: 0 8px 32px rgba(60, 100, 180, 0.09);
-            padding: 2.5rem 2rem 2rem 2rem;
-            max-width: 400px;
-            width: 100%;
-            text-align: center;
-        }
-        h1 {
-            font-size: 2.2rem;
-            margin: 0 0 1rem 0;
-            color: #305070;
-        }
-        p { 
-            font-size: 1.2rem; 
-            color: #555; 
-        }
-        a.button {
-            background: #4895ef;
-            color: #fff;
-            padding: 0.8rem 1.4rem;
-            border-radius: 5px;
-            text-decoration: none;
-            margin-top: 1.4rem;
-            display: inline-block;
-            font-weight: bold;
-            transition: background 0.2s;
-        }
-        a.button:hover, a.button:focus {
-            background: #1765ad;
-        }
-        @media (max-width: 480px) {
-            main {
-                padding: 1.2rem 0.5rem;
-                max-width: 98vw;
-            }
-        }
-    </style>
+    <title>Homepage</title>
+    <!-- Link to the centralized external stylesheet -->
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <main>
-        <h1>Hello, World! 👋</h1>
-        <p>Welcome to a modern, minimal hello world page.</p>
-        <a class="button" href="contributors.html">Meet Our Contributors</a>
+    <main class="container">
+        <h1>Welcome to Our Modern Website</h1>
+        <p>Explore our newly refreshed interface. We are committed to design, accessibility, and continuous improvement.</p>
+        <a href="contributors.html" class="btn">Meet the Contributors</a>
     </main>
 </body>
 </html>
