@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Hello World Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Nunito', sans-serif;
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            color: #232946;
+        }
+        .container {
+            max-width: 680px;
+            margin: 40px auto 0 auto;
+            background: #fff;
+            border-radius: 1.5rem;
+            box-shadow: 0 8px 32px rgba(44,62,80,0.08);
+            padding: 2rem 2.5rem 1.5rem 2.5rem;
+        }
+        h1 {
+            font-size: 2.6rem;
+            margin-bottom: 0.3em;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+        .faq-item {
+            margin-bottom: 1.3em;
+        }
+        .faq-question {
+            cursor: pointer;
+            font-weight: 700;
+            background: #e0eaff;
+            padding: 1em;
+            border-radius: 10px;
+            margin-bottom: 0.2em;
+            box-shadow: 0 1px 3px rgba(100,100,111,.08);
+            transition: background .2s;
+        }
+        .faq-question:hover {
+            background: #d3f6f6;
+        }
+        .faq-answer {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: max-height .4s cubic-bezier(0.4,0,0.2,1), opacity .4s cubic-bezier(0.4,0,0.2,1);
+            padding-left: 1em;
+        }
+        .faq-item.active .faq-answer {
+            max-height: 220px;
+            opacity: 1;
+            margin-bottom: 8px;
+        }
+        .back-link {
+            display: block;
+            margin: 2.5rem auto 1rem auto;
+            text-align: center;
+            text-decoration: none;
+            color: #4f8cff;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: color .2s;
+        }
+        .back-link:hover {
+            color: #166fd8;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 1rem 0.6rem; }
+            h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>FAQ</h1>
+        <div class="faq-item">
+            <div class="faq-question">What is this project?</div>
+            <div class="faq-answer">This project is a playful and modern take on the classic "Hello World" web page. It blends web design trends with interactive, welcoming features!</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">How can I change the theme?</div>
+            <div class="faq-answer">On the home page, click the "Surprise Me" button! You’ll see theme variations and fun surprise messages.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Where can I find the source code?</div>
+            <div class="faq-answer">All code is available on the project’s GitHub repository. Feel free to explore, fork, or contribute!</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Can I use this design for my own site?</div>
+            <div class="faq-answer">Absolutely! The project is open source (see the LICENSE file for full details). Personalize, remix, and have fun!</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Is there a secret Easter egg?</div>
+            <div class="faq-answer">Keep exploring and trying new things on the site. You might stumble upon a surprise or two...</div>
+        </div>
+    </div>
+    <a href="index.html" class="back-link">&larr; Back to Home</a>
+
+    <script>
+        // Simple accordion functionality
+        document.querySelectorAll('.faq-question').forEach(function(q){
+            q.addEventListener('click', function(){
+                const item = this.parentNode;
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
