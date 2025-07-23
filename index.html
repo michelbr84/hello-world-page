@@ -1,115 +1,108 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello, World! em Várias Linguagens</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background: #f7f7f7;
-        }
-        h1 {
-            color: #333;
-            text-align: center;
-        }
-        h2 {
-            color: #1b5e20;
-        }
-        .exemplo {
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px #ccc;
-            margin: 20px auto;
-            max-width: 600px;
-            padding: 20px;
-        }
-        pre {
-            background: #e3e3e3;
-            padding: 10px;
-            border-radius: 6px;
-            overflow-x: auto;
-            font-size: 1em;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello, World! in All Languages</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f6f6f6; margin: 0; padding: 2em; }
+    h1 { color: #2c3e50; }
+    h2 { color: #30336b; }
+    pre { background: #fff; padding: 1em; border-radius: 5px; box-shadow: 0 1px 3px #eee; overflow-x: auto; }
+    .container { max-width: 800px; margin: 0 auto; }
+  </style>
 </head>
 <body>
-    <h1>Hello, World! em Várias Linguagens</h1>
+  <div class="container">
+    <h1>Hello, World! in Programming Languages</h1>
+    <p>This page shows how to print "Hello, World!" in several popular programming languages.</p>
 
-    <div class="exemplo">
-        <h2>Python</h2>
-        <pre>print("Hello, World!")</pre>
-    </div>
+    <h2>Python</h2>
+    <pre>print("Hello, World!")</pre>
 
-    <div class="exemplo">
-        <h2>JavaScript</h2>
-        <pre>console.log("Hello, World!");</pre>
-    </div>
+    <h2>JavaScript</h2>
+    <pre>console.log("Hello, World!");</pre>
 
-    <div class="exemplo">
-        <h2>Java</h2>
-        <pre>public class HelloWorld {
+    <h2>Java</h2>
+    <pre>public class HelloWorld {
     public static void main(String[] args) {
         System.out.println("Hello, World!");
     }
 }</pre>
-    </div>
 
-    <div class="exemplo">
-        <h2>C</h2>
-        <pre>#include &lt;stdio.h&gt;
-
+    <h2>C</h2>
+    <pre>#include <stdio.h>
 int main() {
     printf("Hello, World!\n");
     return 0;
 }</pre>
-    </div>
 
-    <div class="exemplo">
-        <h2>C++</h2>
-        <pre>#include &lt;iostream&gt;
-using namespace std;
-
+    <h2>C++</h2>
+    <pre>#include <iostream>
 int main() {
-    cout &lt;&lt; "Hello, World!" &lt;&lt; endl;
+    std::cout << "Hello, World!" << std::endl;
     return 0;
 }</pre>
-    </div>
 
-    <div class="exemplo">
-        <h2>Swift</h2>
-        <pre>print("Hello, World!")</pre>
-    </div>
+    <h2>C#</h2>
+    <pre>using System;
+class Program {
+    static void Main() {
+        Console.WriteLine("Hello, World!");
+    }
+}</pre>
 
-    <div class="exemplo">
-        <h2>Haskell</h2>
-        <pre>main = putStrLn "Hello, World!"</pre>
-    </div>
+    <h2>Go</h2>
+    <pre>package main
+import "fmt"
+func main() {
+    fmt.Println("Hello, World!")
+}</pre>
 
-    <div class="exemplo">
-        <h2>Perl</h2>
-        <pre>print "Hello, World!\n";</pre>
-    </div>
+    <h2>Ruby</h2>
+    <pre>puts "Hello, World!"</pre>
 
-    <div class="exemplo">
-        <h2>Lua</h2>
-        <pre>print("Hello, World!")</pre>
-    </div>
+    <h2>PHP</h2>
+    <pre><?php
+echo "Hello, World!";
+?></pre>
 
-    <div class="exemplo">
-        <h2>R</h2>
-        <pre>cat("Hello, World!\n")</pre>
-    </div>
+    <h2>Swift</h2>
+    <pre>print("Hello, World!")</pre>
 
-    <div class="exemplo">
-        <h2>Objective-C</h2>
-        <pre>#import &lt;stdio.h&gt;
+    <h2>Haskell</h2>
+    <pre>main = putStrLn "Hello, World!"</pre>
+
+    <h2>Perl</h2>
+    <pre>print "Hello, World!\n";</pre>
+
+    <h2>Lua</h2>
+    <pre>print("Hello, World!")</pre>
+
+    <h2>R</h2>
+    <pre>cat("Hello, World!\n")</pre>
+
+    <h2>Objective-C</h2>
+    <pre>#import &lt;stdio.h&gt;
 int main() {
     printf("Hello, World!\n");
     return 0;
 }</pre>
-    </div>
 
+    <h2>Rust</h2>
+    <pre>fn main() {
+    println!("Hello, World!");
+}</pre>
+
+    <h2>Kotlin</h2>
+    <pre>fun main() {
+    println("Hello, World!")
+}</pre>
+
+    <h2>TypeScript</h2>
+    <pre>console.log("Hello, World!");</pre>
+
+  </div>
 </body>
 </html>
