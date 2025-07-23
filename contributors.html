@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contributors - Hello World Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(120deg, #f0c27b 0%, #4b1248 100%);
+            color: #212121;
+            font-family: 'Roboto', sans-serif;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: #fff9f3;
+            margin: 40px auto 0 auto;
+            max-width: 700px;
+            border-radius: 1.3rem;
+            box-shadow: 0 8px 24px rgba(75,18,72,0.10);
+            padding: 2.2rem 2rem;
+        }
+        h1 {
+            font-size: 2.3rem;
+            margin-bottom: 1.2em;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+        .contributor-list {
+            list-style: none;
+            padding: 0;
+        }
+        .contributor-list li {
+            display: flex;
+            align-items: center;
+            gap: 1em;
+            margin: 1.2em 0;
+            background: #f7edff;
+            padding: 1em 1.2em;
+            border-radius: 0.9em;
+            box-shadow: 0 1px 3px rgba(75,18,72,0.07);
+        }
+        .contributor-list img {
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            border: 2px solid #ececec;
+        }
+        .contributor-details span {
+            display: block;
+        }
+        .contributor-name {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .contributor-role {
+            font-size: 0.96em;
+            color: #7a3a77;
+        }
+        .back-link {
+            display: block;
+            margin: 2.2rem auto 0 auto;
+            text-align: center;
+            color: #962c6c;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+            color: #4b1248;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 1.1rem 0.5rem; }
+            h1 { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contributors</h1>
+        <ul class="contributor-list">
+            <li>
+                <img src="https://avatars.githubusercontent.com/u/6340756?v=4" alt="Michel's Avatar">
+                <div class="contributor-details">
+                    <span class="contributor-name">Michel Brandt</span>
+                    <span class="contributor-role">Project Creator &amp; Maintainer</span>
+                </div>
+            </li>
+            <li>
+                <img src="https://i.imgur.com/aq39RMA.png" alt="AI Assistant Avatar">
+                <div class="contributor-details">
+                    <span class="contributor-name">OpenAI Assistant</span>
+                    <span class="contributor-role">Content &amp; Code Contributor</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <a href="index.html" class="back-link">&larr; Back to Home</a>
+</body>
+</html>
